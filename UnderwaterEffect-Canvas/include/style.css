@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#main-canvas{
+    background-image: url(../img/underwater.jpg);
+    background-size: cover;
+    width: 100%;
+}
