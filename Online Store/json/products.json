@@ -47,8 +47,7 @@
         {
           "label": "blue",
           "image": "https://tendenzstore.com/products_pics/15c708e568a4d5c0b6296b04373f74470124597.jpg"
-        },
-        
+        }
       ],
       "sizes": [
         {
@@ -82,8 +81,7 @@
         {
           "label": "red",
           "image": "http://images4.fanpop.com/image/photos/23900000/DC-dc-shoes-23930381-441-300.jpg"
-        },
-        
+        }
       ],
       "sizes": [
         {
@@ -103,7 +101,6 @@
           "price": "170"
         }
       ]
-    },
-    
+    }
   ]
 }
