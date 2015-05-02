@@ -21,6 +21,9 @@ header{
     height: auto;
     margin-top: 50px;
 }
+a{
+    color: #000;
+}
 .product-wrapper{
     display: inline-block;
     width: 300px;
@@ -28,4 +31,16 @@ header{
     margin: 0 9px;
     padding: 5px;
     font-size: 14px;
+    text-align: center;
+}
+
+.product-wrapper img{
+    width: 70%;
+    padding: 10px;
+}
+.title{
+    font-weight: bold;
+}
+.price{
+    color: #E74C3C;
 }
