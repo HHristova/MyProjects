@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": "1234",
+      "name": "Кецове Converse",
+      "description": "Спортни кецове за всеки ден и всеки стил.",
+      "brand": "Converse",
+      "colors": [
+        {
+          "label": "black",
+          "image": "http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=53618859"
+        },
+        {
+          "label": "red",
+          "image": "http://www.hellastyle.com/41-183-large/converse-shoes-red-chuck-taylor-all-star-classic-womens-mens-canvas-sneakers-low.jpg"
+        },
+        {
+          "label": "blue",
+          "image": "http://images.askmen.com/fashion/apparel/converse-shoes-1019483-flash-1019483-flash.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "label": "38",
+          "price": "100"
+        },
+        {
+          "label": "42",
+          "price": "120"
+        },
+        {
+          "label": "46",
+          "price": "150"
+        }
+      ]
+    },
+    {
+      "id": "5678",
+      "name": "Дамски ботуши Tendenz",
+      "description": "Преборете зимата в лукс и удобство.",
+      "brand": "Tendenz",
+      "colors": [
+        {
+          "label": "black",
+          "image": "https://tendenzstore.com/products_pics/44884d195745861ccb6412f0ecd8a9f20124596.jpg"
+        },
+        {
+          "label": "blue",
+          "image": "https://tendenzstore.com/products_pics/15c708e568a4d5c0b6296b04373f74470124597.jpg"
+        },
+        
+      ],
+      "sizes": [
+        {
+          "label": "36",
+          "price": "200"
+        },
+        {
+          "label": "38",
+          "price": "220"
+        },
+        {
+          "label": "40",
+          "price": "240"
+        },
+        {
+          "label": "42",
+          "price": "300"
+        }
+      ]
+    },
+    {
+      "id": "9999",
+      "name": "Skate обувки DC",
+      "description": "За да се чувствате удобно всеки ден носете DC shoes.",
+      "brand": "DC",
+      "colors": [
+        {
+          "label": "black",
+          "image": "http://www.merxmarx.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/D/C/DC-Shoes-Court-Graffik-300529-KWC_1.jpg"
+        },
+        {
+          "label": "red",
+          "image": "http://images4.fanpop.com/image/photos/23900000/DC-dc-shoes-23930381-441-300.jpg"
+        },
+        
+      ],
+      "sizes": [
+        {
+          "label": "40",
+          "price": "100"
+        },
+        {
+          "label": "42",
+          "price": "110"
+        },
+        {
+          "label": "44",
+          "price": "150"
+        },
+        {
+          "label": "46",
+          "price": "170"
+        }
+      ]
+    },
+    
+  ]
+}
