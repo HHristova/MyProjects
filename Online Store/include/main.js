@@ -16,7 +16,7 @@ $(document).ready(function () {
             var name = products[i]["name"];
             var image = products[i]["colors"][0]["image"];
             var price = products[i]["sizes"][0]["price"];
-            box = box + '<a href="product.html?id='+id+'"><div class="product-wrapper"><img src="' + image + '"><div class="title">' + name + '</div><div class="price">' + price + ' лв.</div></div></a>';
+            box = box + '<a href="product.html?id='+id+'"><div class="product-wrapper"><img src="' + image + '"><div class="title">' + name + '</div><hr><div class="price">' + price + ' лв.</div></div></a>';
         }
         $("#container").html(box);
 

@@ -38,6 +38,11 @@ a{
     width: 70%;
     padding: 10px;
 }
+hr{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
 .title{
     font-weight: bold;
 }
