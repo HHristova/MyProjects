@@ -49,3 +49,37 @@ hr{
 .price{
     color: #E74C3C;
 }
+.single-image, .right-side-content{
+    display: inline-block;
+    vertical-align: top;
+}
+.single-title, .single-description, .single-brand, .single-colors, .single-size, .single-price{
+    display: block;
+    margin: 0 20px;
+}
+.single-title{
+    font-size: 25px;
+}
+.single-description, .single-brand{
+    font-size: 18px;
+}
+.single-brand{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.single-colors div{
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    display: inline-block;
+}
+.single-size{
+    margin-top: 20px;
+}
+.single-price{
+    font-size: 25px;
+    color: #E74C3C;
+    font-weight: bold;
+    text-align: right;
+}

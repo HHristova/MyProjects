@@ -30,10 +30,12 @@ $(document).ready(function () {
                     var name = products[i]["name"];
                     var description = products[i]["description"];
                     var brand = products[i]["brand"];
-                    var label = products[i]["colors"][0]["label"];
-                    var image = products[i]["colors"][0]["image"];
-                    var sizes = products[i]["sizes"][0]["sizes"];
-                    var price = products[i]["sizes"][0]["price"];
+                    var defaultColor = products[i]["colors"][0]["label"];
+                    var defaultColorBg = products[i]["colors"][0]["labelbg"];
+                    var defaultImage = products[i]["colors"][0]["image"];
+                    var defaultSize = products[i]["sizes"][0]["sizes"];
+                    var defaultPrice = products[i]["sizes"][0]["price"];
+                    $("#container").html();
                 }
             }
             if (found == false) {
