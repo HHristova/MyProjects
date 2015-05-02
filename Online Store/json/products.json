@@ -7,14 +7,17 @@
       "colors": [
         {
           "label": "black",
+          "labelbg": "черен", 
           "image": "http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=53618859"
         },
         {
           "label": "red",
+          "labelbg": "червен",
           "image": "http://www.hellastyle.com/41-183-large/converse-shoes-red-chuck-taylor-all-star-classic-womens-mens-canvas-sneakers-low.jpg"
         },
         {
           "label": "blue",
+          "labelbg": "син",
           "image": "http://images.askmen.com/fashion/apparel/converse-shoes-1019483-flash-1019483-flash.jpg"
         }
       ],
@@ -41,10 +44,12 @@
       "colors": [
         {
           "label": "black",
+          "labelbg": "черен",
           "image": "https://tendenzstore.com/products_pics/44884d195745861ccb6412f0ecd8a9f20124596.jpg"
         },
         {
           "label": "blue",
+          "labelbg": "син",
           "image": "https://tendenzstore.com/products_pics/15c708e568a4d5c0b6296b04373f74470124597.jpg"
         }
       ],
@@ -75,10 +80,12 @@
       "colors": [
         {
           "label": "black",
+          "labelbg": "черен",
           "image": "http://www.merxmarx.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/D/C/DC-Shoes-Court-Graffik-300529-KWC_1.jpg"
         },
         {
           "label": "red",
+          "labelbg": "червен",
           "image": "http://images4.fanpop.com/image/photos/23900000/DC-dc-shoes-23930381-441-300.jpg"
         }
       ],
