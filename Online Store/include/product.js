@@ -37,12 +37,44 @@ $(document).ready(function () {
                     var defaultImage = products[i]["colors"][0]["image"];
                     var defaultSize = products[i]["sizes"][0]["sizes"];
                     var defaultPrice = products[i]["sizes"][0]["price"];
-                    $(".single-product-wrapper").html('<div class="single-image"><img src="'+defaultImage+'"/></div><div class="right-side-content"><div class="single-title">'+name+'</div><div class="single-description">'+description+'</div><div class="single-brand">Производител: <span>'+brand+'</span></div><div class="single-colors">Цвят:<br/></div>');
+                    var colors = products[i]["colors"];
+                    var colorsHtml = "";
+                    for (var i = 0; i < colors.length; i++) {
+                        if (i == 0) {
+                            colorsHtml = colorsHtml + "<div class='selectedColor' style='background: " + colors[i]["label"] + ";' data-color='" + colors[i]["labelbg"] + "'></div>";
+                        }
+                        else {
+                            colorsHtml = colorsHtml + "<div style='background: " + colors[i]["label"] + ";' data-color='" + colors[i]["labelbg"] + "'></div>";
+                        }
+                    }
+                    var sizes = products[i]["sizes"];
+                    var sizesHtml = "";
+                    var pricesHtml = sizes[0]["price"]
+                    for (var i = 0; i < sizes.length; i++) {
+                        sizesHtml = sizesHtml + "<option>" + sizes[i]["label"] + "</option>";
+                    }
+                    $(".single-product-wrapper").html('<div class="single-image"><img src="' + defaultImage + '"/></div><div class="right-side-content"><div class="single-title">' + name + ' - <span>'+defaultColorBg+'</span></div><div class="single-description">' + description + '</div><div class="single-brand">Производител: <span>' + brand + '</span></div><div class="single-colors">Цвят:<br/>' + colorsHtml + '</div><div class="single-size">Размер: <select>' + sizesHtml + '</select></div><div class="single-price">'+pricesHtml+' лв.</div>');
                 }
             }
             if (found == false) {
                 $("#container").html("<div id='nothing-found'>Продуктът не е намерен</div>");
             }
+            $(".single-colors div").click(function () {
+                $(".single-colors div").removeClass("selectedColor");
+                $(this).addClass("selectedColor");
+                
+                var selectedColor = $(this).attr("data-color");
+                $(".single-title span").html(selectedColor);
+                
+            });
+            
+            $(".single-size").change(function(){
+                
+            });
         }
+    }
+    
+    function findImage(product, label){
+        
     }
 });

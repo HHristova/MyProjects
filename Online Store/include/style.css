@@ -60,6 +60,10 @@ hr{
     display: inline-block;
     vertical-align: top;
 }
+.single-image img{
+    max-height: 300px;
+    max-width: 300px;
+}
 .right-side-content{
     text-align: left;
 }
@@ -85,12 +89,21 @@ hr{
 .single-colors div{
     width: 30px;
     height: 30px;
-    background: #000;
     display: inline-block;
     margin-right: 10px;
+    cursor: pointer;
+}
+.selectedColor{
+    border: 5px solid gray;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 .single-size{
     margin-top: 10px;
+}
+.single-size select{
+    font-size: 15px;
 }
 .single-price{
     font-size: 25px;
