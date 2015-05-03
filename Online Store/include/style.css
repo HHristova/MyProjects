@@ -33,7 +33,10 @@ a{
     font-size: 14px;
     text-align: center;
 }
-
+#nothing-found{
+    text-align: center;
+    font-size: 24px;
+}
 .product-wrapper img{
     width: 70%;
     padding: 10px;
@@ -49,9 +52,16 @@ hr{
 .price{
     color: #E74C3C;
 }
+.single-product-wrapper{
+    text-align: center;
+    display: none;
+}
 .single-image, .right-side-content{
     display: inline-block;
     vertical-align: top;
+}
+.right-side-content{
+    text-align: left;
 }
 .single-title, .single-description, .single-brand, .single-colors, .single-size, .single-price{
     display: block;
@@ -64,22 +74,37 @@ hr{
     font-size: 18px;
 }
 .single-brand{
+    margin-top: 10px;
+}
+.single-brand span{
     font-weight: bold;
-    margin-top: 20px;
+}
+.single-colors{
+    margin-top: 10px;
 }
 .single-colors div{
-    margin-top: 20px;
     width: 30px;
     height: 30px;
     background: #000;
     display: inline-block;
+    margin-right: 10px;
 }
 .single-size{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .single-price{
     font-size: 25px;
     color: #E74C3C;
     font-weight: bold;
     text-align: right;
+}
+.buy-btn{
+    float: right;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    background: #26A65B;
+    color: #fff;
+    cursor: pointer;
 }
