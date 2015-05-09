@@ -55,6 +55,7 @@ hr{
 .single-product-wrapper{
     text-align: center;
     display: none;
+    min-height: 400px;
 }
 .single-image, .right-side-content{
     display: inline-block;
@@ -66,6 +67,7 @@ hr{
 }
 .right-side-content{
     text-align: left;
+    min-width: 430px;
 }
 .single-title, .single-description, .single-brand, .single-colors, .single-size, .single-price{
     display: block;
@@ -119,5 +121,20 @@ hr{
     border: none;
     background: #26A65B;
     color: #fff;
+    cursor: pointer;
+    width: 200px;
+}
+#button-wrapper{
+    width: 100%;
+    text-align: center;
+}
+#button-wrapper input{
+    background: #E47C5D;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 }

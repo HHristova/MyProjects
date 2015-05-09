@@ -56,7 +56,7 @@ $(document).ready(function () {
                     for (var i = 0; i < sizes.length; i++) {
                         sizesHtml = sizesHtml + "<option>" + sizes[i]["label"] + "</option>";
                     }
-                    $(".single-product-wrapper").html('<div class="single-image"><img src="' + defaultImage + '"/></div><div class="right-side-content"><div class="single-title">' + name + ' - <span>' + defaultColorBg + '</span></div><div class="single-description">' + description + '</div><div class="single-brand">Производител: <span>' + brand + '</span></div><div class="single-colors">Цвят:<br/>' + colorsHtml + '</div><div class="single-size">Размер: <select>' + sizesHtml + '</select></div><div class="single-price">' + pricesHtml + ' лв.</div>');
+                    $(".single-product-wrapper").html('<div class="single-image"><img src="' + defaultImage + '"/></div><div class="right-side-content"><div class="single-title">' + name + ' - <span>' + defaultColorBg + '</span></div><div class="single-description">' + description + '</div><div class="single-brand">Производител: <span>' + brand + '</span></div><div class="single-colors">Цвят:<br/>' + colorsHtml + '</div><div class="single-size">Размер: <select>' + sizesHtml + '</select></div><div class="single-price">' + pricesHtml + ' лв.</div><input type="button" value="Buy" class="buy-btn"/>');
                 }
             }
             if (found == false) {
