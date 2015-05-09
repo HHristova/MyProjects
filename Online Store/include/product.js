@@ -28,17 +28,18 @@ $(document).ready(function () {
         }
         else {
             for (var i = 0; i < products.length; i++) {
+
                 if (products[i]["id"] == id) {
                     found = true;
                     loadedProduct = products[i];
-                    var name = products[i]["name"];
-                    var description = products[i]["description"];
-                    var brand = products[i]["brand"];
-                    var defaultColorBg = products[i]["colors"][0]["labelbg"];
-                    var defaultImage = products[i]["colors"][0]["image"];
+                    var name = loadedProduct["name"];
+                    var description = loadedProduct["description"];
+                    var brand = loadedProduct["brand"];
+                    var defaultColorBg = loadedProduct["colors"][0]["labelbg"];
+                    var defaultImage = loadedProduct["colors"][0]["image"];
 
                     //Colors
-                    var colors = products[i]["colors"];
+                    var colors = loadedProduct["colors"];
                     var colorsHtml = "";
                     for (var i = 0; i < colors.length; i++) {
                         if (i == 0) {
@@ -49,7 +50,7 @@ $(document).ready(function () {
                         }
                     }
                     //Sizes
-                    var sizes = products[i]["sizes"];
+                    var sizes = loadedProduct["sizes"];
                     var sizesHtml = "";
                     var pricesHtml = sizes[0]["price"]
                     for (var i = 0; i < sizes.length; i++) {
@@ -61,6 +62,8 @@ $(document).ready(function () {
             if (found == false) {
                 $("#container").html("<div id='nothing-found'>Продуктът не е намерен</div>");
             }
+            
+            
             $(".single-colors div").click(function () {
 
                 //add/remove class selectedColor
@@ -73,23 +76,41 @@ $(document).ready(function () {
 
                 var label = $(this).attr("data-info");
 
-                findImage(loadedProduct, label);
+                changeImage(loadedProduct, label);
 
             });
 
-            $(".single-size").change(function () {
-
+            $("select").change(function () {
+                var selectedSize = $(this).val();
+                changePrice(loadedProduct, selectedSize);
             });
+
         }
     }
 
-    function findImage(product, label) {
+    function changeImage(product, label) {
 
         var colors = product["colors"];
-        var color = "";
+
         for (var i = 0; i < colors.length; i++) {
-            color = color + " " + colors[i]["image"];
+            if (colors[i]["label"] == label) {
+                $(".single-image img").attr("src", colors[i]["image"]);
+            }
         }
-        console.log(color);
+
     }
+
+    function changePrice(product, label) {
+        var sizes = product["sizes"];
+
+        for (var i = 0; i < sizes.length; i++) {
+            if (sizes[i]["label"] == label) {
+                $(".single-price").html(sizes[i]["price"]+" лв.");
+
+            }
+        }
+
+    }
+
+
 });
