@@ -58,3 +58,7 @@ thead td, tbody td{
     padding: 5px 20px;
     width: 300px;
 }
+img{
+    width: 25%;
+    cursor: pointer;
+}
