@@ -4,11 +4,41 @@
         <title>PhoneBook</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="include/style.css"/>
         <script type="text/javascript" src="include/jquery-2.0.3.js"></script>
         <script type="text/javascript" src="include/main.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="container">
+            <h2>Phone Book:</h2>
+            <div id="input-wrapper">
+                <input type="text" placeholder="Name"/>
+                <input type="text" placeholder="Phone Number"/>
+                <input type="text" placeholder="Notes"/><br/>
+                <input id="btn" type="button" value="Insert"/>
+            </div>
+            <div id="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Phone Number
+                            </td>
+                            <td>
+                                Notes
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </body>
 </html>

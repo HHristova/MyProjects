@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#container{
+    width: 70%;
+    margin: 0 auto;
+    background: #C8C9B5;
+    padding-bottom: 50px;
+}
+h2{
+    text-align: center;
+    padding: 20px 0;
+    font-weight: normal;
+}
+#input-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+#input-wrapper input[type="text"]{
+    margin: 0 10px;
+    font-size: 17px;
+    padding: 5px 10px;
+    border: none;
+}
+#btn{
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #506266;
+    color: #fff;
+    cursor: pointer;
+}
+#table-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+thead{
+    background: #7B8F8A;
+    color: #fff;
+    font-size: 20px;
+}
+tbody{
+    background: #999999;
+    color: #fff;
+}
+thead td, tbody td{
+    padding: 5px 20px;
+    width: 300px;
+}
