@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto 0;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #E4F1FE;
+    background: #3498db;
+    padding: 10px 0;
+    box-shadow: 0px 5px 10px gray;
+}
+#container{
+    margin: 0 auto;
+    width: 1000px;
+    height: auto;
+    margin-top: 50px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.product-wrapper{
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    margin: 0 9px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+#nothing-found{
+    text-align: center;
+    font-size: 24px;
+}
+.product-wrapper img{
+    width: 70%;
+    padding: 10px;
+}
+hr{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border-color: #000;
+}
+.title{
+    font-weight: bold;
+}
+.price{
+    color: #E74C3C;
+}
+.single-product-wrapper{
+    text-align: center;
+    display: none;
+    min-height: 400px;
+}
+.single-image, .right-side-content{
+    display: inline-block;
+    vertical-align: top;
+}
+.single-image img{
+    max-height: 300px;
+    max-width: 300px;
+}
+.right-side-content{
+    text-align: left;
+    min-width: 430px;
+}
+.single-title, .single-description, .single-brand, .single-colors, .single-size, .single-price{
+    display: block;
+    margin: 0 20px;
+}
+.single-title{
+    font-size: 25px;
+}
+.single-description, .single-brand{
+    font-size: 18px;
+}
+.single-brand{
+    margin-top: 10px;
+}
+.single-brand span{
+    font-weight: bold;
+}
+.single-colors{
+    margin-top: 10px;
+}
+.single-colors div{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.selectedColor{
+    border: 5px solid gray;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.single-size{
+    margin-top: 10px;
+}
+.single-size select{
+    font-size: 15px;
+}
+.single-price{
+    font-size: 25px;
+    color: #E74C3C;
+    font-weight: bold;
+    text-align: right;
+}
+.buy-btn{
+    float: right;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    background: #26A65B;
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+}
+#button-wrapper{
+    width: 100%;
+    text-align: center;
+}
+#button-wrapper input{
+    background: #E47C5D;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
