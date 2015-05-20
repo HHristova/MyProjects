@@ -1,4 +1,36 @@
 
-<div ng-controller="productController as product">
-    {{product_id}}
+<div ng-controller="productController as product" class="single-product-wrapper">
+    <div class="single-image">
+        <img ng-src="{{product.currentImage}}"/>
+    </div>
+    <div class="right-side-content">
+        <div class="single-title">
+            {{product.info.name}}
+        </div>
+        <div class="single-description">
+            {{product.info.description}}
+        </div>
+        <div class="single-brand">
+            Производител: 
+            <span>{{product.info.brand}}</span>
+        </div>
+        <div class="single-colors">
+            Цвят:
+            <br/>
+            <div ng-repeat="color in product.info.colors">
+               <div ng-class='{selectedColor:product.activeColor == "{{color.label}}"}' style='background:{{color.label}};' data-color='{{color.labelbg}}' data-info='{{color.label}}' ng-click='product.changeColor(color.label)'></div>
+            </div>
+        </div>
+        <div class="single-size">
+            Размер: 
+            <select></select>
+        </div>
+        <div class="single-price">
+
+        </div>
+        <input type="button" value="Buy" class="buy-btn"/>
+    </div>
+    <div id="button-wrapper">
+        <a href="../AngularStore"><input type="button" value="< Go Back"></a>
+    </div>
 </div>
