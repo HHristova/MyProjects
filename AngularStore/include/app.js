@@ -33,6 +33,8 @@ app.controller("productController", function ($scope, $routeParams) {
     //vzimame pyrvata defaultna snimka
     this.currentImage = this.info.colors[0].image;
     this.activeColor = this.info.colors[0].label;
+    this.selectedSize = this.info.sizes[0].label;
+    this.selectedPrice = this.info.sizes[0].price;
     
     //funkciq za smqna na cvqt
     this.changeColor = function (label) {
@@ -43,6 +45,18 @@ app.controller("productController", function ($scope, $routeParams) {
             }
         }
         this.activeColor = label;
-    }
+    };
+    
+    this.changeSize = function(){
+        for(var i = 0; i < this.info.sizes.length; i++){
+            if(this.selectedSize == this.info.sizes[i].label){
+                this.selectedPrice = this.info.sizes[i].price;
+                break;
+            }
+        }
+        
+    };
+    
+    
 
 });

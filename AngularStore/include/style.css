@@ -66,8 +66,8 @@ hr{
     vertical-align: top;
 }
 .single-image img{
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 250px;
+    max-width: 250px;
 }
 .right-side-content{
     text-align: left;
@@ -129,6 +129,7 @@ hr{
     width: 200px;
 }
 #button-wrapper{
+    margin-top: 40px;
     width: 100%;
     text-align: center;
 }

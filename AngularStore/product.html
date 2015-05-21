@@ -18,15 +18,19 @@
             Цвят:
             <br/>
             <div ng-repeat="color in product.info.colors">
-               <div ng-class='{selectedColor:product.activeColor == "{{color.label}}"}' style='background:{{color.label}};' data-color='{{color.labelbg}}' data-info='{{color.label}}' ng-click='product.changeColor(color.label)'></div>
+                <div ng-class='{selectedColor:product.activeColor ==  "{{color.label}}"}' style='background:{{color.label}};' data-color='{{color.labelbg}}' data-info='{{color.label}}' ng-click='product.changeColor(color.label)'></div>
             </div>
         </div>
         <div class="single-size">
             Размер: 
-            <select></select>
+            <select ng-change="product.changeSize()" ng-model="product.selectedSize">
+                <option value="{{size.label}}" ng-repeat="size in product.info.sizes">
+                    {{size.label}}
+                </option>
+            </select>
         </div>
         <div class="single-price">
-
+            {{product.selectedPrice}} лв.
         </div>
         <input type="button" value="Buy" class="buy-btn"/>
     </div>
