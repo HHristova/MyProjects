@@ -1,10 +1,20 @@
 <div ng-controller="productsListController as productsList">
-    <div class="product-wrapper" ng-repeat="item in productsList.items">
+    <!-- generirane na spisyk s producti // orderby ime, cena + - -->
+    <div class="product-wrapper" ng-repeat="item in productsList.items | orderBy:productsList.order">
         <a href="#product/{{item.id}}">
             <img ng-src="{{item.colors[0].image}}">
             <div class="title">{{item.name}}</div>
             <hr>
             <div class="price">{{item.sizes[0].price}} лв.</div>
         </a>
+    </div>
+    
+    <div id="orderby">
+        <span>Order By:</span><br/>
+        <select ng-model="productsList.order">
+            <option value="name">Alphabetical</option>
+            <option value="sizes[0].price">Price (asc)</option>
+            <option value="-sizes[0].price">Price (desc)</option>
+        </select>
     </div>
 </div>

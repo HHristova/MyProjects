@@ -16,6 +16,8 @@ app.config(['$routeProvider',
 
 app.controller("productsListController", function ($scope, $routeParams) {
     this.items = products;
+    
+    this.order = "name";
 });
 
 app.controller("productController", function ($scope, $routeParams) {
@@ -47,6 +49,7 @@ app.controller("productController", function ($scope, $routeParams) {
         this.activeColor = label;
     };
     
+    //promqna na razmera i cenata
     this.changeSize = function(){
         for(var i = 0; i < this.info.sizes.length; i++){
             if(this.selectedSize == this.info.sizes[i].label){
@@ -56,7 +59,5 @@ app.controller("productController", function ($scope, $routeParams) {
         }
         
     };
-    
-    
 
 });
