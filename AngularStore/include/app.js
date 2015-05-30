@@ -61,3 +61,15 @@ app.controller("productController", function ($scope, $routeParams) {
     };
 
 });
+
+//directives (za include na template)
+/*
+app.directive('productContainer', function(){
+   return{
+     restrict: 'E', (Type of directive - element) //HTML <product-container></product-container>; restrict: 'A' (attribute) //HTML <div product-container></div>
+     templateUrl: 'template.html',
+     controller: function(){},
+     controllerAs: 'the name of the controller'
+   };
+});
+*/
