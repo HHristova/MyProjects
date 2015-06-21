@@ -20,15 +20,6 @@ $(document).ready(function () {
         $("#nav li a").removeClass("active");
     });
 
-//    var top_position;
-//    $(window).scroll(function () {
-//        top_position = $("#projects").offset().top - $(window).scrollTop();
-//        console.log(top_position);
-//        if (top_position >= -20 && top_position <= 20) {
-//            $("#nav li a").removeClass("active");
-//        }
-//    });
-
     var top_position = [];
     var temp;
     for (var i = 1; i <= $("#nav ul li").size(); i++) {
@@ -38,15 +29,5 @@ $(document).ready(function () {
         top_position.push(temp);
         console.log(top_position);
     }
-
-    $(window).scroll(function () {
-        top_position = $("#projects").offset().top - $(window).scrollTop();
-        console.log(top_position);
-        for (var i = 0; i < top_position.legth; i++) {
-            
-//            if (top_position[i] >= -20 && top_position[i] <= 20) {
-//            }
-        }
-    });
 
 });
